@@ -16,7 +16,7 @@ The steady-state heat conduction equation with uniform volumetric heat generatio
 
 \[
 \frac{\partial^2T}{\partial x^2}
-+
++ 
 \frac{\partial^2T}{\partial y^2}
 =
 -\frac{q'''}{k}
@@ -44,7 +44,7 @@ T_{i-1,j}
 T_{i,j+1}
 +
 T_{i,j-1}
--
+- 
 4T_{i,j}
 =
 -\frac{q'''}{k}\Delta x^2
