@@ -14,7 +14,7 @@ Both dense and sparse matrix implementations are included, allowing efficient so
 
 The steady-state heat conduction equation with uniform volumetric heat generation is
 
-\[
+\[ 
 \frac{\partial^2T}{\partial x^2}
 + 
 \frac{\partial^2T}{\partial y^2}
