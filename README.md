@@ -14,12 +14,7 @@ Both dense and sparse matrix implementations are included, allowing efficient so
 
 The steady-state heat conduction equation with uniform volumetric heat generation is
 
-\[ 
-\frac{\partial^2T}{\partial x^2}
-+ 
-\frac{\partial^2T}{\partial y^2}
-=
--\frac{q'''}{k}
+\[ \frac{\partial^2T}{\partial x^2}+ \frac{\partial^2T}{\partial y^2}=-\frac{q'''}{k}
 \]
 
 where
@@ -36,18 +31,7 @@ The computational domain is discretized using a uniform Cartesian grid.
 
 Applying second-order central finite differences results in the five-point stencil
 
-\[
-T_{i+1,j}
-+
-T_{i-1,j}
-+
-T_{i,j+1}
-+
-T_{i,j-1}
-- 
-4T_{i,j}
-=
--\frac{q'''}{k}\Delta x^2
+\[T_{i+1,j}+T_{i-1,j}+T_{i,j+1}+T_{i,j-1}- 4T_{i,j}=-\frac{q'''}{k}\Delta x^2
 \]
 
 The discretized equations are assembled into the linear system
